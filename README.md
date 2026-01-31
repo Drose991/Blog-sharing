@@ -1,64 +1,45 @@
-Blog Sharing
+# Blog Sharing
+Blog Sharing is an online blog site aimed at sharing up-to-date information, articles, and guides about artificial intelligence (AI). Users can explore the latest developments in AI and share their own ideas.
 
-Blog Sharing, yapay zeka (AI) ile ilgili güncel bilgiler, makaleler ve rehberler paylaşmayı amaçlayan online bir blog sitesidir. Kullanıcılar, AI dünyasındaki yenilikleri keşfedebilir ve kendi fikirlerini paylaşabilirler.
+## Features
 
-Özellikler
+- Informative blog posts about AI
+- User-friendly interface built with Jinja2
+- Read, add, update, and delete blog posts
+- Data management via REST API (Flask + SQLAlchemy + SQLite)
 
-AI hakkında bilgilendirici blog yazıları
+## Requirements / Prerequisites
 
-Kullanıcı dostu arayüz Jinja2 ile oluşturulmuştur
+To run this project, your computer should have the following installed:
+- Python 3.13 – required for the Flask application
+- pip – for installing Python packages
+- Virtual environment (optional but recommended) – to isolate project dependencies
+- Required Python packages – listed in the requirements.txt file
+- SQLite – used as the project database (comes with Python)
+- SQLAlchemy – for database operations
+- Jinja2 – for the frontend (included with Flask)
+Optional: Tools like Postman or curl can be used to test the REST API.
 
-Blog yazılarını okuyabilir, ekleyebilir, güncelleyebilir ve silebilirsiniz
+## Installation
 
-REST API ile veri yönetimi (Flask + SQLAlchemy + SQLite)
+1. Clone the repository to your computer.
+2. Navigate to the project folder.
+3. Create and activate a virtual environment.
+4. Install the required dependencies.
+5. Start the Flask server.
+6. Open the application in your browser to start using the site.
 
-Gereksinimler / Ön Koşullar
+## Usage Instructions
 
-Projeyi çalıştırmak için bilgisayarınızda aşağıdakiler yüklü olmalıdır:
+Open the application in your browser. The main page displays all available blog posts.
+Add a new blog post by clicking the “New Post” or “Add Blog” button.
+View, edit, or delete existing blog posts as needed.
+Users can also interact with the REST API using tools like Postman to add, list, update, or delete blog posts.
+Detailed instructions for using the site and API can be added to the README as the project progresses.
 
-Python 3.13 – Flask uygulaması için gerekli.
+## Contributing
 
-pip – Python paketlerini yüklemek için.
+We welcome contributions! Please read the CONTRIBUTING.md
+ file before submitting a pull request.
 
-Sanal ortam (opsiyonel ama önerilir) – Proje bağımlılıklarını izole etmek için.
-
-Gerekli Python paketleri – requirements.txt dosyasında listelenmiştir.
-
-SQLite – Projenin veritabanı için. Python ile birlikte gelir.
-
-SQLAlchemy – Veritabanı işlemleri için.
-
-Jinja2 – Frontend için (Flask ile birlikte gelir).
-
-İsteğe bağlı: REST API’yi test etmek için Postman veya curl gibi araçlar kullanılabilir.
-
-Kurulum
-
-Repository’yi bilgisayarınıza klonlayın.
-
-Proje klasörüne gidin.
-
-Bir sanal ortam oluşturun ve aktif edin.
-
-Gerekli bağımlılıkları yükleyin.
-
-Flask sunucusunu başlatın.
-
-Tarayıcınızdan uygulamayı açarak siteyi kullanmaya başlayın.
-
-Kullanım Talimatı
-
-Tarayıcınızdan uygulamayı açın. Ana sayfada mevcut blog yazılarını görebilirsiniz.
-
-Yeni bir blog yazısı eklemek için “Yeni Yazı” veya “Add Blog” butonunu kullanın.
-
-Mevcut blog yazılarını görüntüleyebilir, düzenleyebilir veya silebilirsiniz.
-
-REST API üzerinden işlem yapmak isteyen kullanıcılar için, Postman veya benzeri araçlarla blog ekleme, listeleme, güncelleme ve silme işlemleri yapılabilir.
-
-Site ve API kullanımı hakkında detaylı bilgiler, proje ilerledikçe README’ye eklenebilir.
-
-Katkıda Bulunma
-
-Katkılarınızı memnuniyetle karşılarız! Lütfen önce CONTRIBUTING.md
- dosyasını okuyun ve bir pull request gönderin.
+License
