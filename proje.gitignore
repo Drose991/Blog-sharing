@@ -14,3 +14,11 @@ venv/
 
 # Database (opsiyonel)
 *.db
+
+# Logs
+*.log
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
