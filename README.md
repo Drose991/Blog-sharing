@@ -40,6 +40,8 @@ Detailed instructions for using the site and API can be added to the README as t
 ## Contributing
 
 We welcome contributions! Please read the CONTRIBUTING.md
- file before submitting a pull request.
+file before submitting a pull request.
 
-License
+## License
+
+This project is licensed under the [MIT License](MIT-Licience.txt).
