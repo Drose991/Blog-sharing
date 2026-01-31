@@ -44,4 +44,4 @@ file before submitting a pull request.
 
 ## License
 
-This project is licensed under the [MIT License]([MIT-Licience.txt](https://github.com/Drose991/Blog-sharing/blob/main/MIT-License.txt)).
+This project is licensed under the [MIT License](MIT-License.txt).
