@@ -1,5 +1,5 @@
-# Blog Sharing
-Blog Sharing is an online blog site aimed at sharing up-to-date information, articles, and guides about artificial intelligence (AI). Users can explore the latest developments in AI and share their own ideas.
+# (name)
+(name) is an online blog site aimed at sharing up-to-date information, articles, and guides about artificial intelligence (AI). Users can explore the latest developments in AI and share their own ideas.
 
 ## Features
 
@@ -45,3 +45,10 @@ file before submitting a pull request.
 ## License
 
 This project is licensed under the [MIT License](MIT-License.txt).
+
+## Run locally
+
+1. Install Flask:
+```bash
+pip install flask
+python app.py
