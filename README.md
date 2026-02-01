@@ -1,5 +1,5 @@
-# Blog Sharing
-Blog Sharing is an online blog site aimed at sharing up-to-date information, articles, and guides about artificial intelligence (AI). Users can explore the latest developments in AI and share their own ideas.
+# (name)
+(name) is an online blog site aimed at sharing up-to-date information, articles, and guides about artificial intelligence (AI). Users can explore the latest developments in AI and share their own ideas.
 
 ## Features
 
