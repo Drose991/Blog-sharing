@@ -45,3 +45,10 @@ file before submitting a pull request.
 ## License
 
 This project is licensed under the [MIT License](MIT-License.txt).
+
+## Run locally
+
+1. Install Flask:
+```bash
+pip install flask
+python app.py
