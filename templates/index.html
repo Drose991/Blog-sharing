@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sharing CRUD Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Sharing CRUD Application</h1>
+
+        <h2>Add New Blog</h2>
+        <form action="{{ url_for('add_blog') }}" method="POST" class="form-box">
+            <input type="text" name="title" placeholder="Blog title" required>
+            <textarea name="content" placeholder="Blog content" required></textarea>
+
+            <select name="user_id" required>
+                <option value="">Select User</option>
+                {% for user in users %}
+                    <option value="{{ user.id }}">{{ user.username }}</option>
+                {% endfor %}
+            </select>
+
+            <select name="category_id" required>
+                <option value="">Select Category</option>
+                {% for category in categories %}
+                    <option value="{{ category.id }}">{{ category.name }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Add Blog</button>
+        </form>
+
+        <h2>Blogs Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Created At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for blog in blogs %}
+                <tr>
+                    <td>{{ blog.id }}</td>
+                    <td>{{ blog.title }}</td>
+                    <td>{{ blog.content }}</td>
+                    <td>{{ blog.user.username }}</td>
+                    <td>{{ blog.category.name }}</td>
+                    <td>{{ blog.created_at }}</td>
+                    <td>
+                        <a href="{{ url_for('edit_blog', blog_id=blog.id) }}" class="edit-btn">Edit</a>
+                        <form action="{{ url_for('delete_blog', blog_id=blog.id) }}" method="POST" style="display:inline;">
+                            <button type="submit" class="delete-btn">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>JOIN Query Result</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Blog ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in join_results %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
