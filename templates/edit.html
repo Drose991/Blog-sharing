@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Blog</h1>
+
+        <form method="POST" class="form-box">
+            <input type="text" name="title" value="{{ blog[1] }}" required>
+            <textarea name="content" required>{{ blog[2] }}</textarea>
+
+            <select name="user_id" required>
+                {% for user in users %}
+                    <option value="{{ user[0] }}" {% if user[0] == blog[3] %}selected{% endif %}>
+                        {{ user[1] }}
+                    </option>
+                {% endfor %}
+            </select>
+
+            <select name="category_id" required>
+                {% for category in categories %}
+                    <option value="{{ category[0] }}" {% if category[0] == blog[4] %}selected{% endif %}>
+                        {{ category[1] }}
+                    </option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Update Blog</button>
+            <a href="/">Back</a>
+        </form>
+    </div>
+</body>
+</html>
