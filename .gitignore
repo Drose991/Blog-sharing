@@ -4,6 +4,7 @@ __pycache__/
 
 # Virtual environment
 venv/
+.venv/
 
 # Environment variables
 .env
@@ -12,7 +13,7 @@ venv/
 .vscode/
 .idea/
 
-# Database (opsiyonel)
+# Database
 *.db
 
 # Logs
